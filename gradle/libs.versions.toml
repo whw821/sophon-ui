@@ -1,0 +1,23 @@
+[versions]
+datastore = "1.0.0"
+protobuf = "3.23.0"
+protobuf-plugin = "0.9.4"
+voyager = "1.0.0"
+ksp = "1.8.20-1.0.10"
+junit-jupiter = "5.8.1"
+
+[libraries]
+datastore = { module = "androidx.datastore:datastore-core", version.ref = "datastore" }
+protobuf = { module = "com.google.protobuf:protobuf-kotlin", version.ref = "protobuf" }
+ksp = { module = "com.google.devtools.ksp:symbol-processing-api", version.ref = "ksp" }
+voyager-navigator = { group = "cafe.adriel.voyager", name = "voyager-navigator", version.ref = "voyager" }
+voyager-screenmodel = { group = "cafe.adriel.voyager", name = "voyager-screenmodel", version.ref = "voyager" }
+voyager-bottom-sheet-nav = { group = "cafe.adriel.voyager", name = "voyager-bottom-sheet-navigator", version.ref = "voyager" }
+voyager-tab-nav = { group = "cafe.adriel.voyager", name = "voyager-tab-navigator", version.ref = "voyager" }
+voyager-transitions = { group = "cafe.adriel.voyager", name = "voyager-transitions", version.ref = "voyager" }
+junit-jupiter = { group = "org.junit.jupiter", name = "junit-jupiter", version.ref = "junit-jupiter" }
+
+[plugins]
+protobuf = {id = "com.google.protobuf" ,version.ref = "protobuf-plugin"}
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+

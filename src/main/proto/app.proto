@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+option java_package = "app.protobuf";
+option java_multiple_files = true;
+
+/**
+ * Adb工具配置
+ */
+message Adb {
+  string tool_path = 1; //adb路径
+}
+
+/**
+ * i18n工具配置
+ */
+message I18N {
+  string tool_path = 1; //i18n工具路径
+}
+
+/**
+ * 项目工程结构
+ */
+message Project{
+  string absolute_path = 1;
+  repeated Module modules = 2;
+}
+
+/**
+ * 工程模块结构
+ */
+message Module{
+  string name = 1;
+  int32 level = 2;
+  string absolute_path = 3;
+}
