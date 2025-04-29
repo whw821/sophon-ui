@@ -16,7 +16,7 @@ Sophon UI是一款功能强大的Android开发辅助工具，提供一系列实�
 
 ## 界面预览
 
-![主页界面](screenshot/sophon_ui_home.png)
+![主页界面](screenshot/sophon_ui_home.jpg)
 
 ## 系统要求
 
